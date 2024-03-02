@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: max(1200px, 100vw);
+    height: 70px;
+    background-color: rgba(158, 103, 54);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 35px;
+    border-radius: 100%;
+}
+
+.searchbar {
+    display: flex;
+    background-color: white;
+    width: 45vw;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 10px;
+    overflow: hidden;
+}
+
+.searchbar input {
+    flex-grow: 1;
+    border: none;
+}
+
+.searchbar input:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+.searchbar input::placeholder {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.voicesearch {
+    background-color: white;
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.search-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(92, 55, 92);
+    padding: 15px;
+}
+
+.flex {
+    display: flex;
+    list-style-type: none;
+}
+
+.link-wrapper {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.list:hover {
+    transition: transform 0.1s ease;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hamm {
+    display: none;
+}
+
+
+.card1 {
+    border: 1px solid rgb(203, 28, 28);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.card1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px -1px;
+    filter: grayscale(20%);
+    filter: brightness(50%);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.container1 {
+    width: 1000px;
+    height: 400px;
+    padding: 10px;
+    margin: 30px auto;
+    position: relative;
+    z-index: 1;
+    /* Ensure container is above image */
+    overflow: hidden;
+}
+
+.container2 {
+    width: max(1200px, 100vw);
+    height: 40vh;
+    background-color: rgb(158, 102, 54);
+    position: relative;
+    top: -155px;
+    z-index: -2;
+    /* Ensure container is above image */
+    overflow: hidden;
+}
+
+.card2 {
+    width: 365px;
+    height: 200px;
+    background-color: rgb(198, 177, 177);
+    margin: 5px auto;
+    position: relative;
+    top: -400px;
+    z-index: 100;
+    /* Ensure card is above container and image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.hello h1,
+.bestseller h1, .new-arrival h1, .join h1 {
+    @import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card2 button {
+    width: 140px;
+    height: 20px;
+    background-color: rgb(158, 102, 54);
+}
+
+.card2 button:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.desc,
+.desc1 {
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.card2 button a {
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.container3 {
+    /* border: 1px solid black; */
+    width: 1000px;
+    height: 210px;
+    margin: 5px auto;
+    transform: translateY(-355px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 10px;
+}
+
+.container4 {
+    width: 90%;
+    max-width: 1000px;
+    height: 150px;
+    background-color: burlywood;
+    margin: 5px auto;
+    transform: translateY(-100px);
+    z-index: -1;
+
+}
+
+.container5 {
+    /* border: 1px solid black; */
+    width: 90%;
+    height: 50vh;
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: -436px;
+}
+
+.card3 {
+    /* border: 1px solid black; */
+    width: 24%;
+    height: 82%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-image: url(Assets/occasion-elegance.jpg);
+    background-position: center 1px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card4 {
+    /* border: 1px solid black; */
+    width: 28%;
+    height: 90%;
+    background-image: url(Assets/Woman.webp);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card5 {
+    /* border: 1px solid black; */
+    width: 24%;
+    height: 82%;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-image: url(Assets/classic-charm.webp);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card3 button, .card4 button, .card5 button{
+    width: 140px;
+    height: 20px;
+    background-color: rgb(158, 102, 54);
+    position: relative;
+    top: 10px;
+}
+
+.card3 button a, .card4 button a, .card5 button a{
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.card3:hover, .card4:hover, .card5:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0.8;
+}
+.card3 button:hover, .card4 button:hover, .card5 button:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0.8;
+}
+
+.container6{
+    /* border: 1px solid black; */
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    transform: translateY(-300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.card6{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrival-card{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(90px);
+    gap: 75px;
+}
+.arrival-card button{
+    width: 160px;
+    height: 30px;
+    background-color: rgb(158, 102, 54);
+}
+.arrival-card button a{
+    text-decoration: none;
+    font-weight: 800;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+}
+.arrival-card button:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.desc2{
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.arrival-card2{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.woman{
+    width: 55%;
+    height: 90%;
+    /* border: 1px solid black; */
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    top: 140px;
+    background-color: white;
+}
+.woman div{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.woman div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card7{
+    width: 90%;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: rgb(158, 102, 54);
+    padding: 40px;
+    box-sizing: border-box;
+    z-index: -1;
+}
+.card7 img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 1px -38px;
+}
+.media-woman{
+    display: none;
+}
+.card8{
+    width: 90%;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: rgb(158, 102, 54);
+    padding: 40px;
+    box-sizing: border-box;
+    margin: 5px;
+    z-index: -1;
+}
+.card9{
+    width: 50%;
+    height: 300px;
+    /* border: 1px solid black; */
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    transform: translateY(-166px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card9:hover{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0.8;
+    width: 52%;
+}
+.card10{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+.card10 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.card10 button{
+    align-self: center;
+    width: 160px;
+    height: 30px;
+    background-color: rgb(158, 102, 54);
+    transform: translate(200px,-15px);
+}
+.card10 button a{
+    text-decoration: none;
+    font-weight: 800;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+}
+.card10 button:hover{
+    opacity: 0.8;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.join{
+    transform: translateY(-80px);
+}
