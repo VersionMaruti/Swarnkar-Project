@@ -8,7 +8,8 @@
         height: 100px;
         overflow: initial;
     }
-
+    
+      
     .logo {
         display: flex;
         position: relative;
@@ -70,6 +71,9 @@
         position: relative;
         top: -2px;
         left: 2px;
+    }
+    .suggestions{
+        transform: translate(-170px, -27px);  
     }
 
     .container2 {
@@ -370,5 +374,8 @@
     }
     .card10 button{
         transform: translateX(0px);
+    }
+    .suggestions{
+        transform: translate(-170px, -27px);    
     }
 }
