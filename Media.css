@@ -1,4 +1,4 @@
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1190px){
     .navbar {
         max-width: 100vw;
         margin: 0 auto;
@@ -75,31 +75,27 @@
     .suggestions{
         transform: translate(-170px, -27px);  
     }
-
-    .container2 {
-        max-width: 100vw;
-        overflow: initial;
-        /* background-color: red; */
-    }
-
-    .container1 {
+    .CONTAINER1{
         width: 90%;
         /* Adjust width for smaller screens */
     }
-
-    .card1 {
+    .CARD1 {
         width: 100%;
         /* Adjust width for smaller screens */
         height: 100%;
         /* Allow height to adjust automatically */
     }
-
-    .card1 img {
+    .CARD2 {
+        width: 100%;
+        /* Adjust width for smaller screens */
+        height: 100%;
+        /* Allow height to adjust automatically */
+    }
+    .img img{
         width: 100%;
         height: 100%;
         /* Allow image height to adjust automatically */
     }
-
     .container4 {
         width: 90%;
     }
@@ -114,36 +110,31 @@
 
     .card5 {
         width: 20%;
+        background-position: center 1px;
     }
 
     .desc1 {
         width: 70%;
     }
-
     .container6 {
         width: 90%;
-        transform: translateY(-513px);
+        /* transform: translateY(-513px); */
     }
-
     .card6 {
         width: 90%;
     }
-
     .arrival-card {
         width: 90%;
         gap: 30px;
-        transform: translateY(36px);
+        transform: translateY(0px);
     }
-
     .arrival-card2 {
         width: 90%;
     }
-
     .woman {
         width: 90%;
-        transform: translateX(40px);
+        transform: translateX(18px);
     }
-
     .card7 {
         width: 95%;
 
@@ -156,87 +147,74 @@
     }
 }
 
-@media screen and (max-width: 991px) {
-
+@media screen and (max-width: 991px){
     /* Adjust container widths */
-    .container1,
+    .CONTAINER1,
     .container3,
     .container4,
     .container5 {
         width: 90%;
     }
-
-    .card1 img {
+    .CARD1 {
+        width: 100%;
+        /* Adjust width for smaller screens */
+        height: 100%;
+        /* Allow height to adjust automatically */
+    }
+    .CARD2 {
+        width: 100%;
+        /* Adjust width for smaller screens */
+        height: 100%;
+        /* Allow height to adjust automatically */
+    }
+    .img img{
         width: 100%;
         height: 100%;
         /* Allow image height to adjust automatically */
     }
-
-    /* Adjust container positions */
-    .container1 {
-        margin-top: 20px;
-    }
-
-    .container3 {
-        transform: translateY(-325px);
-    }
-
-    .container4 {
-        transform: translateY(-50px);
-    }
-
-    .container5 {
-        top: -286px;
-    }
-
     /* Adjust card widths */
     .card3,
     .card5 {
         width: 28%;
-        transform: translateY(-103px);
+        /* transform: translateY(-103px); */
     }
 
     .card4 {
         width: 31%;
-        transform: translateY(-103px);
+        /* transform: translateY(-103px); */
     }
 
     .card5 {
-        background-position: center;
+        background-position: center 1px;
     }
-
-    /* Adjust margins */
-    .card3,
-    .card5 {
-        margin-left: 3%;
-        margin-right: 3%;
+     /* Adjust margins */
+     .card3,
+     .card5 {
+         margin-left: 3%;
+         margin-right: 3%;
+     }
+ 
+     .card4 {
+         margin-left: 0;
+         margin-right: 0;
     }
-
-    .card4 {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     .container6 {
         width: 90%;
         margin-top: 20px;
+        transform: translateY(-200px);
     }
-
     .card6 {
         width: 90%;
         padding: 0px;
     }
-
     .arrival-card {
-        width: auto;
+        width: 58%;
         gap: 16px;
-        transform: translateY(105px);
-    }
-
+        transform: translate(-158px, 242px);
+    } 
     .arrival-card2 {
         display: none;
     }
-
     .card7 {
         width: 95%;
         height: auto;
@@ -247,7 +225,6 @@
     .card7 img {
         object-position: center center;
     }
-
     .media-woman {
         display: block;
         width: 35%;
@@ -259,7 +236,6 @@
         background-color: white;
         transform: translate(-64px, 173px);
     }
-
     .media-woman div {
         width: 100%;
         height: 100%;
@@ -273,109 +249,3 @@
     }
 }
 
-@media screen and (max-width: 635px) {
-    .card1 {
-        width: 100%;
-        transform: translateX(-31px);
-        margin-left: 28px;
-    }
-
-    .card1 img {
-        width: 100%;
-        height: 100%;
-        object-fit: initial;
-    }
-
-    .card2 {
-        width: 80%;
-        height: 80%;
-    }
-
-    .container5 {
-        width: 90%;
-        height: 100%;
-        padding: 10px;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card3 {
-        width: 90%;
-        height: 200px;
-        transform: translateY(-20px);
-        background-repeat: no-repeat;
-    }
-
-    .card4 {
-        width: 80%;
-        height: 200px;
-        transform: translateY(120px);
-        background-repeat: no-repeat;
-    }
-
-    .media-container4 {
-        width: 90%;
-        max-width: 1000px;
-        height: 150px;
-        background-color: burlywood;
-        margin: auto;
-        /* transform: translateY(-100px); */
-        z-index: -1;
-    }
-
-    .card5 {
-        width: 80%;
-        height: 200px;
-        transform: translateY(120px);
-        background-repeat: no-repeat;
-        background-position: top;
-    }
-
-
-
-    /* Adjust margins */
-    .card3,
-    .card5 {
-        margin: auto;
-    }
-
-    .card4 {
-        margin: auto;
-    }
-
-    .container6 {
-        width: 90%;
-        margin-top: 150px;
-    }
-
-    .card6 {
-        width: 90%;
-        padding: 0px;
-    }
-
-    .card7 {
-        width: 95%;
-        height: auto;
-        padding: 20px;
-        margin: 20px auto;
-    }
-
-    .media-woman {
-        display: block;
-        width: 40%;
-        height: 90%;
-        /* border: 1px solid black; */
-        padding: 5px;
-        box-sizing: border-box;
-        align-self: flex-end;
-        background-color: white;
-        transform: translate(-23px, 120px);
-    }
-    .card10 button{
-        transform: translateX(0px);
-    }
-    .suggestions{
-        transform: translate(-170px, -27px);    
-    }
-}
