@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
 }
 body{
   background-color: #f6f6f6;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
+
 
 .navbar {
   width: max(1200px, 100vw);
@@ -98,7 +102,10 @@ body{
   z-index: 10;
 }
 
-
+.name{
+  color: maroon;
+  font-size: 25px;
+}
 .list {
   display: flex;
   flex-direction: column;
@@ -127,6 +134,11 @@ body{
 
 .hamm {
   display: none;
+}
+.Swarnkar{
+  font-size: 50px; 
+  color: maroon;
+  transform: translateY(-2px);
 }
 
 .CONTAINER1{
@@ -159,12 +171,6 @@ body{
   background-color: burlywood;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-}
-.CARD1 button:hover{
-    transform: scale(1.1);
-   transition: transform 0.3s ease, background-color 0.3s ease;
-   opacity: 0.8;
 }
 .CARD1 button a{
   text-decoration: none;
@@ -182,6 +188,10 @@ body{
   justify-content: center;
   align-items: center;
 }
+.description h3{
+  font-size: 25px;
+  font-family: "Inter", cursive;
+}
 
 .img{
   width: 80%;
@@ -191,6 +201,19 @@ body{
   border-bottom-right-radius: 80px;
   background-image: url(https://www.donnaglamour.it/wp-content/uploads/2015/12/SH_donna_gioielli.jpg);
   /* background-position: center center; */
+  padding: 10px;
+  box-sizing: border-box;
+  background-image: url(https://www.donnaglamour.it/wp-content/uploads/2015/12/SH_donna_gioielli.jpg);
+  background-position: right;
+  object-fit: contain;
+  background-size: 500px;
+}
+.back{
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
 }
 .img img{
   width: 100%;
@@ -202,7 +225,7 @@ body{
 }
 
 .desc1 {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", cursive;
     text-align: center;
     flex-wrap: wrap;
 }
@@ -213,6 +236,11 @@ body{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+.bestseller h1{
+  color: maroon;
+  font-weight: 600;
 }
 .container3 {
   /* border: 1px solid black; */
@@ -225,8 +253,11 @@ body{
   justify-content: center;
   align-items: center;
   padding: 0px 10px;
-  gap: 10px;
+  gap: 30px;
+  /* margin-bottom: -150px; */
+  margin-top: -80px;
 }
+
 .container4 {
   width: 90%;
   max-width: 1000px;
@@ -248,28 +279,50 @@ body{
   position: relative;
   /* top: -436px; */
   transform: translateY(-134px);
+  /* margin-top: -50px; */
 }
-
-.card3 {
+.naam{
+  width: 90%;
+  height: 50px;
   /* border: 1px solid black; */
-  width: 24%;
-  height: 82%;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-right: 10px;
-  background-image: url(Assets/occasion-elegance.jpg);
-  background-position: center 1px;
+  margin: auto;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateY(38px);
+  gap: 24px;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.naam span{
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+  font-family: "Baloo Bhai 2", cursive;
+  color: maroon;
+}
+.card3 {
+  /* border: 1px solid black;  */
+    width: 24%;
+    height: 82%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-image: url(https://i.ytimg.com/vi/6zBpz6j91qs/maxresdefault.jpg);
+    background-size: 415px;
+    background-repeat: no-repeat;
+    background-position: -142px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .card4 {
   /* border: 1px solid black; */
   width: 28%;
   height: 90%;
-  background-image: url(Assets/Woman.webp);
-  background-position: center;
+  background-image: url(Assets/classic-charm.webp);
+  background-repeat: no-repeat;
+  background-position: center 1px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -281,7 +334,9 @@ body{
   height: 82%;
   margin-left: 10px;
   margin-top: 10px;
-  background-image: url(Assets/classic-charm.webp);
+  background-image: url(Assets/Woman.webp);
+  background-position: center 1px;
+  background-size: 415px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -291,7 +346,14 @@ body{
   height: 20px;
   background-color: rgb(158, 102, 54);
   position: relative;
-  top: 10px;
+  /* align-items: center;
+  justify-content: center; */
+  top: 3px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
 }
 .card3 button a, .card4 button a, .card5 button a{
   text-decoration: none;
@@ -303,22 +365,22 @@ body{
 .card3:hover, .card4:hover, .card5:hover{
   transform: scale(1.1);
   transition: transform 0.3s ease, background-color 0.3s ease;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .card3 button:hover, .card4 button:hover, .card5 button:hover{
   transform: scale(1.1);
   transition: transform 0.3s ease, background-color 0.3s ease;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .media-woman{
   display: none;
 }
 .container6{
   /* border: 1px solid black; */
-  width: 1200px;
+  width: 1100px;
   height: auto;
   margin: auto;
-  /* transform: translateY(-300px); */
+  transform: translateY(-100px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,6 +397,36 @@ body{
   justify-content: center;
   align-items: center;
 }
+.arrival-card0{
+  /* border: 1px solid black; */
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* transform: translateY(-68px); */
+  gap: 75px;
+  margin: auto;
+  /* text-align: justify; */
+}
+.arrival-card0 button{
+  width: 160px;
+  height: 30px;
+  background-color: rgb(158, 102, 54);
+}
+.arrival-card0 button a{
+  text-decoration: none;
+  font-weight: 800;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.arrival-card0 button:hover{
+  transform: scale(1.1);
+  opacity: 0.8;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
 .arrival-card{
   /* border: 1px solid black; */
   width: 50%;
@@ -343,8 +435,8 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transform: translateX(90px);
-  gap: 75px;
+  transform: translate(94px, 85px);
+  gap: 40px;
 }
 .arrival-card button{
   width: 160px;
@@ -363,9 +455,22 @@ body{
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .desc2{
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", cursive;
+  font-size: 20px;
   text-align: center;
   flex-wrap: wrap;
+  transform: translateY(-16px);
+}
+.desc20{
+  font-family: "Inter", cursive;
+  font-size: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+  transform: translateY(-16px);
+  /* text-align: justify; */
+}
+.riben{
+  transform: translateY(-70px);
 }
 .arrival-card2{
   /* border: 1px solid black; */
@@ -376,6 +481,43 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.new-arrival h1{
+  color: maroon;
+  font-weight: 700;
+  text-align: center;
+  font-size: 37px;
+}
+.new-arrival0 h1{
+  @import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: maroon;
+  font-weight: 700;
+  text-align: center;
+  font-size: 37px;
+}
+.new-arrival{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.new-arrival0{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.magic h2{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+.magic0 h2{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
 }
 .woman{
   width: 55%;
@@ -399,13 +541,14 @@ body{
 }
 .card7{
   width: 90%;
-  height: 300px;
+  height: 350px;
   /* border: 1px solid black; */
   margin: auto;
-  background-color: rgb(158, 102, 54);
+  background-color: rgb(230, 175, 103);
   padding: 40px;
   box-sizing: border-box;
   z-index: -1;
+  padding-top: -100px;
 }
 .card7 img{
   width: 50%;
@@ -455,10 +598,15 @@ body{
 }
 .card10 button{
   align-self: center;
-  width: 160px;
-  height: 30px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(158, 102, 54);
   transform: translate(200px,-15px);
+  padding: 12px;
+  border-radius: 7px;
 }
 .card10 button a{
   text-decoration: none;
@@ -466,15 +614,14 @@ body{
   color: white;
   font-family: "Inter", sans-serif;
 }
-.card10 button:hover{
-  opacity: 0.8;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
+
 .join{
   transform: translateY(-80px);
 }
 
-
+.doubts{
+  margin-top: -150px;
+}
 
 .faq{
   padding: 10px 12%;
@@ -510,7 +657,7 @@ body{
   padding: 20px;
   font-size: 18px;
   font-weight: 800;
-  background: rgba(158, 103, 54);
+  background: burlywood;
   border-radius: 8px;
   margin-bottom: 2px;
   cursor: pointer;
@@ -530,7 +677,7 @@ input[type="radio"]{
 }
 
 .accordian .content{
-  background: rgba(158, 103, 54);
+  background: burlywood;
   text-align: left;
   padding: 0 20px;
   max-height: 0;
@@ -651,7 +798,7 @@ input[type="radio"]{
 
 .footer{
   background-color: #f6f4f1;
-  margin-top: 80px;
+  margin-top: -50px;
   /* margin-bottom: 80px; */
 }
 
@@ -697,7 +844,7 @@ input[type="radio"]{
 }
 
 .footerIcons{
-  background-color: rgba(158, 103, 54);
+  background-color: burlywood;
 }
 
 .footerIconsContent{
@@ -707,8 +854,8 @@ input[type="radio"]{
   margin-right: auto;
   align-items: center;
   justify-content: center;
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
   gap: 25rem;
@@ -717,6 +864,11 @@ input[type="radio"]{
 
 .footerLogo{
   object-fit: cover;
+  /* border-radius: 100px */
+}
+
+.footerLogo img{
+  border-radius: 100px;
 }
 
 .icons{
