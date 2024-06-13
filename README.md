@@ -1,4 +1,4 @@
-![Screenshot (747)](https://github.com/VersionMaruti/Swarnkar-Project/assets/156605831/a40cc536-8a1d-4a5d-88b5-642cc37459cd)# Swarnkar-Project
+# Swarnkar-Project
 
 Swarnkar is a responsive B2C/B2B jewelry connection website designed to connect jewelers and designers with customers. The website leverages HTML, CSS, and JavaScript for the frontend, and Node.js for backend data validation and error handling.
 
