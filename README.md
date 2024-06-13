@@ -54,7 +54,7 @@ Ensure you have the following software installed on your machine:
 
 ## Screenshots
 ![Screenshot (746)](https://github.com/VersionMaruti/Swarnkar-Project/assets/156605831/10429295-ff6f-44f3-a00b-bced86243bae)
-![Screenshot (747)](https://github.com/VersionMaruti/Swarnkar-Project/assets/156605831/b8693922-ee67-4bab-ab31-6e072d1890a5)
+![Screenshot (749)](https://github.com/VersionMaruti/Swarnkar-Project/assets/156605831/26f40eb4-8951-4b46-a209-77fc4560b2aa)
 ![Screenshot (748)](https://github.com/VersionMaruti/Swarnkar-Project/assets/156605831/602bf39b-29b3-4590-a59f-29f6e42ab065)
 ## Contributing
 
