@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designers</title>
+    <link rel="stylesheet" href="/stylesheets/style3.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+
+        <div class="logo">
+            <div class="logoImg">
+                <img src="https://cdn.pixabay.com/photo/2017/03/05/08/38/character-2117975_1280.png" alt="">
+            </div>
+            <div class="oliv">
+                Swarnkar-Designers
+            </div>
+        </div>
+
+        <div id="right" class="nav-links">
+            <a href="/">HOME</a>
+            <a href="/cart">CART</a>
+            <a href="#">PREORDER</a>
+            <a href="/Designer/about">ABOUT</a>
+            <a href="/Designer/about">CONTACT</a>
+        </div>
+        <a href="#" class="hamm list" id="nav-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24" width="20" height="24" color="#710287"
+                fill="none">
+                <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
+    </div>
+
+    <div id="line">.</div>
+
+    <div id="picture">
+        <div id="collection">
+            <h1>Our New Collection</h1>
+        </div>
+        <div id="search">
+            <div class="searchbar">
+                <input id="searchInput" type="text" placeholder="Search for Jewellers, Designers and more..">
+                <button class="voicesearch" type="voiceSubmit">
+                    <img src="/Assets/voiceSearch.svg" alt="audio">
+                </button>
+                <button class="search-button" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                        color="rgb(92, 55, 92)" fill="none">
+                        <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="count">
+
+            <div class="item" id="item-1">New Collection</div>
+            <div class="item" id="item-2">Special Promo</div>
+            <div class="item" id="item-3">Casual Bag</div>
+            <div class="item" id="item-4">Party Bag</div>
+        </div>
+
+        <!-- <div class="slides">
+        <img src="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=1024x1024&w=is&k=20&c=VzsI_-yWmldqLzFoRpfRCGsx5RkIEytRIVEFZ5Am01E=" alt="">
+    </div> -->
+        <!-- <div id="slides"> -->
+
+        <div class="slides">
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=1024x1024&w=is&k=20&c=VzsI_-yWmldqLzFoRpfRCGsx5RkIEytRIVEFZ5Am01E="
+                    alt="Error loading image">
+                <div class="tag">
+                    <i class="ri-heart-pulse-line"></i>
+                    cubertodesign
+                </div>
+
+            </div>
+
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=1024x1024&w=is&k=20&c=VzsI_-yWmldqLzFoRpfRCGsx5RkIEytRIVEFZ5Am01E="
+                    alt="Error loading image">
+                <div class="tag">
+                    <i class="ri-heart-pulse-line"></i>
+                    cubertodesign
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=1024x1024&w=is&k=20&c=VzsI_-yWmldqLzFoRpfRCGsx5RkIEytRIVEFZ5Am01E="
+                    alt="Error loading image">
+                <div class="tag">
+                    <i class="ri-heart-pulse-line"></i>
+                    cubertodesign
+                </div>
+            </div>
+
+            <!-- <h3>How To Make Epic Website // Frontend development</h3> -->
+        </div>
+    </div>
+</body>
+
+<script>
+    const toggleButton = document.getElementById('nav-toggle');
+const navlinks = document.getElementById('right');
+
+toggleButton.addEventListener('click', () => {
+    navlinks.classList.toggle('active');
+    if (navlinks.classList.contains('active')) {
+        navlinks.style.display = 'flex'; // Adjust display property as needed
+    } else {
+        navlinks.style.display = 'none'; // Adjust display property as needed
+    }
+});
+    document.addEventListener('DOMContentLoaded', () => {
+        const searchInput = document.getElementById('searchInput');
+        const suggestions = document.getElementById('suggestions');
+
+        // Sample suggestion data
+        const suggestionsData = [
+            'Jewellers',
+            'Designers',
+            'Artisans',
+            'Craftsmen',
+            'Goldsmiths',
+            'Silversmiths'
+        ];
+
+        // Function to filter suggestions based on input text
+        const filterSuggestions = (inputText) => {
+            return suggestionsData.filter(suggestion =>
+                suggestion.toLowerCase().includes(inputText.toLowerCase())
+            );
+        };
+
+        // Function to display suggestions
+        const displaySuggestions = () => {
+            const inputText = searchInput.value;
+            const filteredSuggestions = filterSuggestions(inputText);
+
+            // Clear previous suggestions
+            suggestions.innerHTML = '';
+
+            // Display filtered suggestions
+            filteredSuggestions.forEach(suggestion => {
+                const suggestionElement = document.createElement('div');
+                suggestionElement.classList.add('suggestion');
+                suggestionElement.textContent = suggestion;
+                suggestions.appendChild(suggestionElement);
+            });
+
+            // Show suggestions
+            suggestions.style.display = filteredSuggestions.length ? 'flex' : 'none';
+        };
+
+        // Event listener for input focus
+        searchInput.addEventListener('focus', () => {
+            displaySuggestions();
+        });
+
+        // Event listener for input keyup
+        searchInput.addEventListener('keyup', () => {
+            displaySuggestions();
+        });
+
+        // Event listener for clicking on suggestions
+        suggestions.addEventListener('click', (event) => {
+            if (event.target.classList.contains('suggestion')) {
+                searchInput.value = event.target.textContent;
+                suggestions.style.display = 'none';
+            }
+        });
+
+        // Event listener for clicking outside the input and suggestions
+        document.addEventListener('click', (event) => {
+            if (!event.target.matches('#searchInput') && !event.target.matches('.suggestion')) {
+                suggestions.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</html>
