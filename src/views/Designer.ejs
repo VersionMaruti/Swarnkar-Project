@@ -44,93 +44,101 @@
         </a>
     </div>
 
-    <div id="line">.</div>
-
-    <div id="picture">
-        <div id="collection">
-            <h1>Our New Collection</h1>
+    <% if (success_msg && success_msg.length> 0) { %>
+        <div class="alert alert-success">
+            <%= success_msg %>
         </div>
-        <div id="search">
-            <div class="searchbar">
-                <input id="searchInput" type="text" placeholder="Search for Jewellers, Designers and more..">
-                <button class="voicesearch" type="voiceSubmit">
-                    <img src="/Assets/voiceSearch.svg" alt="audio">
-                </button>
-                <button class="search-button" type="submit">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
-                        color="rgb(92, 55, 92)" fill="none">
-                        <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path
-                            d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
-                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </div>
-            <div id="suggestions" class="suggestions"></div>
-        </div>
-    </div>
+        <% } else { %>
+            <div></div>
+            <% } %>
+                <div id="line">.</div>
 
-    <div class="product">
-        <div class="count">
+                <div id="picture">
+                    <div id="collection">
+                        <h1>Our New Collection</h1>
+                    </div>
+                    <div id="search">
+                        <div class="searchbar">
+                            <input id="searchInput" type="text"
+                                placeholder="Search for anything..." class="query" value="">
+                            <button class="voicesearch" type="voiceSubmit">
+                                <img src="/Assets/voiceSearch.svg" alt="audio">
+                            </button>
+                            <button class="search-button" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                    color="rgb(92, 55, 92)" fill="none">
+                                    <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="suggestions" class="suggestions"></div>
+                    </div>
+                </div>
 
-            <div class="item" id="item-1">New Collection</div>
-            <div class="item" id="item-2">Special Promo</div>
-            <div class="item" id="item-3">Casual Bag</div>
-            <div class="item" id="item-4">Party Bag</div>
-        </div>
+                <div class="product">
+                    <div class="count">
 
-        <!-- <div class="slides">
+                        <div class="item" id="item-1">New Collection</div>
+                        <div class="item" id="item-2">Special Promo</div>
+                        <div class="item" id="item-3">Casual Bag</div>
+                        <div class="item" id="item-4">Party Bag</div>
+                    </div>
+
+                    <!-- <div class="slides">
         <img src="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=1024x1024&w=is&k=20&c=VzsI_-yWmldqLzFoRpfRCGsx5RkIEytRIVEFZ5Am01E=" alt="">
     </div> -->
-        <!-- <div id="slides"> -->
+                    <!-- <div id="slides"> -->
 
-        <div class="slides">
-            <div class="img">
-                <img src="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=1024x1024&w=is&k=20&c=VzsI_-yWmldqLzFoRpfRCGsx5RkIEytRIVEFZ5Am01E="
-                    alt="Error loading image">
-                <div class="tag">
-                    <i class="ri-heart-pulse-line"></i>
-                    cubertodesign
+                    <div class="slides">
+                        <div class="img">
+                            <img src="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=1024x1024&w=is&k=20&c=VzsI_-yWmldqLzFoRpfRCGsx5RkIEytRIVEFZ5Am01E="
+                                alt="Error loading image">
+                            <div class="tag">
+                                <i class="ri-heart-pulse-line"></i>
+                                cubertodesign
+                            </div>
+
+                        </div>
+
+                        <div class="img">
+                            <img src="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=1024x1024&w=is&k=20&c=VzsI_-yWmldqLzFoRpfRCGsx5RkIEytRIVEFZ5Am01E="
+                                alt="Error loading image">
+                            <div class="tag">
+                                <i class="ri-heart-pulse-line"></i>
+                                cubertodesign
+                            </div>
+                        </div>
+
+                        <div class="img">
+                            <img src="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=1024x1024&w=is&k=20&c=VzsI_-yWmldqLzFoRpfRCGsx5RkIEytRIVEFZ5Am01E="
+                                alt="Error loading image">
+                            <div class="tag">
+                                <i class="ri-heart-pulse-line"></i>
+                                cubertodesign
+                            </div>
+                        </div>
+
+                        <!-- <h3>How To Make Epic Website // Frontend development</h3> -->
+                    </div>
                 </div>
-
-            </div>
-
-            <div class="img">
-                <img src="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=1024x1024&w=is&k=20&c=VzsI_-yWmldqLzFoRpfRCGsx5RkIEytRIVEFZ5Am01E="
-                    alt="Error loading image">
-                <div class="tag">
-                    <i class="ri-heart-pulse-line"></i>
-                    cubertodesign
-                </div>
-            </div>
-
-            <div class="img">
-                <img src="https://media.istockphoto.com/id/539115110/photo/colosseum-in-rome-and-morning-sun-italy.jpg?s=1024x1024&w=is&k=20&c=VzsI_-yWmldqLzFoRpfRCGsx5RkIEytRIVEFZ5Am01E="
-                    alt="Error loading image">
-                <div class="tag">
-                    <i class="ri-heart-pulse-line"></i>
-                    cubertodesign
-                </div>
-            </div>
-
-            <!-- <h3>How To Make Epic Website // Frontend development</h3> -->
-        </div>
-    </div>
 </body>
 
 <script>
     const toggleButton = document.getElementById('nav-toggle');
-const navlinks = document.getElementById('right');
+    const navlinks = document.getElementById('right');
 
-toggleButton.addEventListener('click', () => {
-    navlinks.classList.toggle('active');
-    if (navlinks.classList.contains('active')) {
-        navlinks.style.display = 'flex'; // Adjust display property as needed
-    } else {
-        navlinks.style.display = 'none'; // Adjust display property as needed
-    }
-});
+    toggleButton.addEventListener('click', () => {
+        navlinks.classList.toggle('active');
+        if (navlinks.classList.contains('active')) {
+            navlinks.style.display = 'flex'; // Adjust display property as needed
+        } else {
+            navlinks.style.display = 'none'; // Adjust display property as needed
+        }
+    });
     document.addEventListener('DOMContentLoaded', () => {
         const searchInput = document.getElementById('searchInput');
         const suggestions = document.getElementById('suggestions');
@@ -197,6 +205,40 @@ toggleButton.addEventListener('click', () => {
             }
         });
     });
+
+
+    //For Search Engine
+
+let query = document.querySelector("#searchInput");
+let searchBtn = document.querySelector(".search-button");
+
+// Function to perform search
+function performSearch() {
+    let url = 'https://www.google.co.in/search?q=' + encodeURIComponent(query.value);
+    window.open(url, '_self');
+}
+
+// Event listener for search button click
+searchBtn.onclick = performSearch;
+
+// Event listener for Enter key press in search input field
+query.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Prevent default form submission
+        performSearch();
+    }
+});
+
+
+
+
+
+    setTimeout(function () {
+        var successMsg = document.querySelector('.alert-success');
+        if (successMsg) {
+            successMsg.remove();
+        }
+    }, 2000); // Adjust the time (in milliseconds) as needed, e.g., 5000 for 2 seconds
 </script>
 
 </html>

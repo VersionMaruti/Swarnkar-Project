@@ -1,4 +1,4 @@
-@media screen and (max-width: 1011px){
+@media screen and (max-width: 1011px) {
     .navbar {
         max-width: 160vw;
         margin: 0 auto;
@@ -8,8 +8,8 @@
         height: 100px;
         overflow: initial;
     }
-    
-      
+
+
     .logo {
         display: flex;
         position: relative;
@@ -72,39 +72,54 @@
         top: -2px;
         left: 2px;
     }
-    .suggestions{
-        transform: translate(-170px, -27px);  
+
+    .gsc-input {
+        width: 900px;
+        border: none;
     }
-    .CONTAINER1{
+
+    .suggestions {
+        transform: translate(-170px, -27px);
+    }
+
+    .CONTAINER1 {
         width: 1200px;
         /* Adjust width for smaller screens */
     }
+
     .CARD1 {
         width: 100%;
         /* Adjust width for smaller screens */
         height: 100%;
         /* Allow height to adjust automatically */
     }
+
     .CARD2 {
         width: 605px;
         /* Adjust width for smaller screens */
         height: 100%;
         /* Allow height to adjust automatically */
     }
-    .riben,.naam{
+
+    .riben,
+    .naam {
         width: 1200px;
     }
-    .img img{
+
+    .img img {
         width: 100%;
         height: 100%;
         /* Allow image height to adjust automatically */
     }
+
     .container3 {
         padding: 0px 100px;
     }
+
     .container4 {
         width: 90%;
     }
+
     .container5 {
         width: 1200px;
     }
@@ -121,48 +136,58 @@
         width: 280px;
         background-position: center 1px;
     }
+
     .arrival-card0 {
         width: 1200px;
     }
-    .ar
-    .desc1 {
+
+    .ar .desc1 {
         width: 70%;
     }
+
     .container6 {
         width: 1200px;
         /* transform: translateY(-513px); */
     }
+
     .card6 {
         width: 90%;
     }
+
     .arrival-card {
         width: 90%;
         gap: 30px;
         transform: translateY(0px);
     }
+
     .arrival-card2 {
         width: 90%;
     }
+
     .woman {
         width: 90%;
         transform: translateX(18px);
     }
+
     .card7 {
         width: 95%;
 
     }
-    .card8{
+
+    .card8 {
         width: 95%;
     }
-    .doubts{
+
+    .doubts {
         width: 1200px;
     }
-    .footer{
+
+    .footer {
         width: 1200px;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .navbar {
         max-width: 400vw;
         margin: 0 auto;
@@ -172,27 +197,32 @@
         height: 100px;
         overflow: initial;
     }
+
     /* Adjust container widths */
     .riben {
         transform: translateY(-70px);
     }
+
     .CARD1 {
         width: 2000px;
         /* Adjust width for smaller screens */
         height: 100%;
         /* Allow height to adjust automatically */
     }
+
     .CARD2 {
         width: 1283px;
         /* Adjust width for smaller screens */
         height: 100%;
         /* Allow height to adjust automatically */
     }
-    .img img{
+
+    .img img {
         width: 100%;
         height: 100%;
         /* Allow image height to adjust automatically */
     }
+
     /* Adjust card widths */
     .card3,
     .card5 {
@@ -208,33 +238,39 @@
     .card5 {
         background-position: center 1px;
     }
-     /* Adjust margins */
-     .card3,
-     .card5 {
-         margin-left: 3%;
-         margin-right: 3%;
-     }
- 
-     .card4 {
-         margin-left: 0;
-         margin-right: 0;
+
+    /* Adjust margins */
+    .card3,
+    .card5 {
+        margin-left: 3%;
+        margin-right: 3%;
     }
+
+    .card4 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .container6 {
         margin-top: 20px;
         transform: translateY(-200px);
     }
+
     .card6 {
         width: 90%;
         padding: 0px;
     }
+
     .arrival-card {
         width: 58%;
         gap: 16px;
         transform: translate(-158px, 242px);
-    } 
+    }
+
     .arrival-card2 {
         display: none;
     }
+
     .card7 {
         width: 95%;
         height: auto;
@@ -245,6 +281,7 @@
     .card7 img {
         object-position: center center;
     }
+
     .media-woman {
         display: block;
         width: 35%;
@@ -256,6 +293,7 @@
         background-color: white;
         transform: translate(-64px, 173px);
     }
+
     .media-woman div {
         width: 100%;
         height: 100%;
@@ -268,4 +306,3 @@
         object-fit: cover;
     }
 }
-

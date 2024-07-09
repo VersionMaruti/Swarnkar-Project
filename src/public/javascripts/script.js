@@ -2,7 +2,7 @@ const toggleButton = document.getElementById('nav-toggle');
 const navlinks = document.getElementById('nav-links');
 
 toggleButton.addEventListener('click', () => {
-    navlinks.classList.toggle('active');
+  navlinks.classList.toggle('active');
 })
 const searchInput = document.getElementById('searchInput');
 const suggestions = document.getElementById('suggestions');
@@ -28,7 +28,7 @@ const filterSuggestions = (inputText) => {
 const displaySuggestions = () => {
   const inputText = searchInput.value;
   const filteredSuggestions = filterSuggestions(inputText);
-  
+
   // Clear previous suggestions
   suggestions.innerHTML = '';
 
@@ -68,3 +68,13 @@ document.addEventListener('click', (event) => {
     suggestions.style.display = 'none';
   }
 });
+
+
+
+
+setTimeout(function() {
+  var successMsg = document.querySelector('.alert-success');
+  if (successMsg) {
+      successMsg.remove();
+  }
+}, 5000); // Adjust the time (in milliseconds) as needed, e.g., 5000 for 5 seconds

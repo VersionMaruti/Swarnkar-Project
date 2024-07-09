@@ -1,76 +1,76 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Responsive Registration Form</title>
-    <meta name="viewport" content="width=device-width,
-      initial-scale=1.0"/>
-    <link rel="stylesheet" href="/stylesheets/stylesheet.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="form-title">Registration</h1>
-      <form action="/Signup" method="POST">
-        <div class="main-user-info">
-          <div class="user-input-box">
-            <label for="fullName">Full Name</label>
-            <input type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="Enter Full Name"/>
-          </div>
-          <div class="user-input-box">
-            <label for="username">Username</label>
-            <input type="text"
-                    id="username"
-                    name="username"
-                    placeholder="Enter Username"/>
-          </div>
-          <div class="user-input-box">
-            <label for="email">Email</label>
-            <input type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter Email"/>
-          </div>
-          <div class="user-input-box">
-            <label for="phoneNumber">Phone Number</label>
-            <input type="text"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    placeholder="Enter Phone Number"/>
-          </div>
-          <div class="user-input-box">
-            <label for="password">Password</label>
-            <input type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Enter Password"/>
-          </div>
-          <div class="user-input-box">
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password"
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    placeholder="Confirm Password"/>
-                  </div>
-                  <p>Already Loggedin? <a href="/Signin">Click Here!</a></p>
-        </div>
-        <div class="gender-details-box">
-          <span class="gender-title">User-Type</span>
-          <div class="gender-category">
-            <input type="radio" name="gender" id="Seller" value="Seller">
-            <label for="Seller">Seller</label>
-            <input type="radio" name="gender" id="Customer" value="Customer">
-            <label for="Customer">Customer</label>
-            <input type="radio" name="gender" id="Designer" value="Designer">
-            <label for="Designer">Designer</label>
-          </div>
-        </div>
-        <div class="form-submit-btn">
-          <input type="submit" value="Register">
-        </div>
-      </form>
-    </div>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Responsive Registration Form</title>
+  <meta name="viewport" content="width=device-width,
+      initial-scale=1.0" />
+  <link rel="stylesheet" href="/stylesheets/stylesheet.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="form-title">Registration</h1>
+    <% if (error_msg && error_msg.length> 0) { %>
+      <div class="alert alert-danger">
+        <%= error_msg %>
+      </div>
+      <% } else { %>
+        <div></div>
+        <% } %>
+          <form action="/Signup" method="POST">
+            <div class="main-user-info">
+              <div class="user-input-box">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name" />
+              </div>
+              <div class="user-input-box">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" />
+              </div>
+              <div class="user-input-box">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" />
+              </div>
+              <div class="user-input-box">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number" />
+              </div>
+              <div class="user-input-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" />
+              </div>
+              <div class="user-input-box">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" />
+              </div>
+              <p>Already Loggedin? <a href="/Signin">Click Here!</a></p>
+            </div>
+            <div class="gender-details-box">
+              <span class="gender-title">User-Type</span>
+              <div class="gender-category">
+                <input type="radio" name="gender" id="Seller" value="Seller">
+                <label for="Seller">Seller</label>
+                <input type="radio" name="gender" id="Customer" value="Customer">
+                <label for="Customer">Customer</label>
+                <input type="radio" name="gender" id="Designer" value="Designer">
+                <label for="Designer">Designer</label>
+              </div>
+            </div>
+            <div class="form-submit-btn">
+              <input type="submit" value="Register">
+            </div>
+          </form>
+  </div>
+</body>
+<script>
+  setTimeout(function () {
+    var errorMsg = document.querySelector('.alert-danger');
+    if (errorMsg) {
+      errorMsg.remove();
+    }
+  }, 5000); // Adjust the time (in milliseconds) as needed, e.g., 5000 for 5 seconds
+</script>
+
 </html>

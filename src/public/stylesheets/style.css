@@ -11,6 +11,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  /* position: relative; */
 }
 
 
@@ -79,6 +80,47 @@ body {
   cursor: pointer;
   font-family: "Inter", sans-serif;
 }
+
+
+.gsc-control-cse {
+  border: none !important;
+  width: 45vw;
+  height: 40px;
+  /* border-radius: 57px; */
+  padding: 0px 10px;
+  overflow: hidden;
+}
+.gsc-control-cse, .gsc-control-cse-en{
+  border: none;
+}
+
+.gsc-input{
+  width: 45vw;
+  border: none;
+}
+.gsc-control-cse .gsc-input-box {
+  border: none;
+  border-radius: 8px;
+  height: 36px;
+}
+
+.gsc-control-cse .gsc-input {
+  font-size: 20px;
+}
+
+.gsc-control-cse .gsc-search-button-v2 {
+  padding: 6px 6px;
+  width: 40px;
+  height: 37px;
+  vertical-align: middle;
+  /* border: 1px solid #923c99; */
+  border: none;
+  border-radius: 30px;
+}
+ 
+
+
+
 
 #suggestions {
   top: 14.2%;
@@ -978,4 +1020,20 @@ input[type="radio"] {
   background-color: #755339;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
 }

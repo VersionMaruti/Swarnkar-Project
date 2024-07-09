@@ -1,20 +1,44 @@
 const express = require('express')
-const Designer = require('./routes/Designer'); // Ensure this file exports an Express router
-require("./db/conn");
-const Register = require('./Models/jewellery')
+const session = require('express-session');
+const flash = require('connect-flash');
 const mongoose = require("mongoose");
-const app = express()
-const port = process.env.PORT || 3000
 const path = require('path')
 
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+const Designer = require('./routes/Designer'); // Ensure this file exports an Express router
+require("./db/conn");
+
+const Register = require('./Models/jewellery')
+const app = express()
+const port = process.env.PORT || 3000
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+
+
+
+//Middleware setup
+app.use(session({
+    secret: 'your_secret_key',
+    resave: false,
+    saveUninitialized:true
+}));
+app.use(flash());
+
+app.use((req,res,next)=>{ 
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.error_msg = req.flash('error_msg');
+    next();
+})
+
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
 app.use('/Designer', Designer);
+
 app.get('/', (req, res) => {
     res.render('Home', { foo: 'FOO' });
 })
@@ -48,18 +72,21 @@ app.post('/Signup', async (req, res) => {
 
             const registered = await Users.save();
             const Gender = req.body.gender;
+            req.flash('success_msg', 'Registration successful!');
             if(Gender == "Seller"){
-                res.status(201).render("stores")
+                res.redirect('/stores'); 
             }else if(Gender == "Customer"){
-                res.status(201).render("Wishlist")
+                res.redirect('/wishlist');
             }else{
-                res.status(201).render("Designer")
+                res.redirect('/Designer');
             }
         }else{
-            res.send("Password are not matching")
+            req.flash('error_msg', 'Passwords do not match.');
+            res.redirect('/Signup')
         }
     } catch (error) {
-        res.status(400).send(error);
+        req.flash('error_msg', 'Invalid data entered or registration failed.');
+        res.redirect('/signup'); // Redirect back to signup page on error
     }
 })
 app.post('/Signin',async (req, res) => {
@@ -71,15 +98,18 @@ app.post('/Signin',async (req, res) => {
         const username = await Register.findOne({username:name});
 
         if(username.email === email && username.password === password){
-            res.status(201).render("Home")
+            req.flash('success_msg', 'Login successful!');
+            res.redirect('/'); 
         }else{
-            res.send("User not found!")
+            req.flash('error_msg', 'User not found!');
+             res.redirect('/Signin'); //Adjust the route as needed
         }
 
     } catch (error) {
-        res.status(400).render(error);
+        req.flash('error_msg','An error occurred!');
+         res.redirect('/Signin'); //Adjust the route as needed
     }
-})
+});
 app.get('/cart', (req, res) => {
     res.render('cart', { foo: 'FOO' });
 })
