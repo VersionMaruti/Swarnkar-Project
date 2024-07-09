@@ -1,10 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://localhost:27017/userRegister",{
-    // useNewUrlParser: true,
-    // useUnifiedTopology: true,
-    // useCreateIndex: true
-}).then(()=>{
+mongoose.connect(process.env.MONG_URL).then(()=>{
     console.log(`Connection Successful`)
 }).catch((e)=>{
     console.log(`Unable to connect`)
