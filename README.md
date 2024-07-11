@@ -2,6 +2,9 @@
 
 Swarnkar is a responsive B2C/B2B jewelry connection website designed to connect jewelers and designers with customers. The website leverages HTML, CSS, and JavaScript for the frontend, and Node.js for backend data validation and error handling.
 
+# Visit the below-link:-
+https://swarnkar.onrender.com
+
 ## Table of Contents
 
 - [Features](#features)
@@ -24,7 +27,7 @@ Swarnkar is a responsive B2C/B2B jewelry connection website designed to connect 
 - **Backend**: Node.js, Express.js, MongoDB
 - **Fonts**: Google Fonts (Lexend)
 - **Icons**: SVG icons
-- **Cloud-Server**: AWS
+- **Cloud-Server**: AWS(Elastic Beanstalk), Render.
 - **Search-Engine**: Google Programmable Search Engine
 
 ## Installation
