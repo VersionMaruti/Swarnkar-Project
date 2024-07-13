@@ -27,7 +27,7 @@ https://swarnkar.onrender.com
 - **Backend**: Node.js, Express.js, MongoDB
 - **Fonts**: Google Fonts (Lexend)
 - **Icons**: SVG icons
-- **Cloud-Server**: AWS
+- **Cloud-Server**: AWS(Elastic Beanstalk), Render.
 - **Search-Engine**: Google Programmable Search Engine
 
 ## Installation
