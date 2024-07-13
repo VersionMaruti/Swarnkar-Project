@@ -128,6 +128,12 @@
 </body>
 
 <script>
+    setTimeout(function () {
+        var successMsg = document.querySelector('.alert-success');
+        if (successMsg) {
+            successMsg.remove();
+        }
+    }, 2000); // Adjust the time (in milliseconds) as needed, e.g., 5000 for 2 seconds
     const toggleButton = document.getElementById('nav-toggle');
     const navlinks = document.getElementById('right');
 
@@ -233,12 +239,7 @@ query.addEventListener('keydown', function(event) {
 
 
 
-    setTimeout(function () {
-        var successMsg = document.querySelector('.alert-success');
-        if (successMsg) {
-            successMsg.remove();
-        }
-    }, 2000); // Adjust the time (in milliseconds) as needed, e.g., 5000 for 2 seconds
+    
 </script>
 
 </html>

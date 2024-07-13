@@ -4,16 +4,17 @@ const express = require('express')
 const session = require('express-session');
 const flash = require('connect-flash');
 const mongoose = require("mongoose");
-const path = require('path')
+const mongodb = require("mongodb");
+const path = require('path')  
 
 
 const Designer = require('./routes/Designer'); // Ensure this file exports an Express router
-require("./db/conn");
+require("./db/conn"); 
 
 const Register = require('./Models/jewellery')
 const app = express()
 const port = process.env.PORT || 3000
-
+  
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));

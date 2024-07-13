@@ -1,3 +1,11 @@
+setTimeout(function() {
+  var successMsg = document.querySelector('.alert-success');
+  if (successMsg) {
+      successMsg.remove();
+  }
+}, 5000); // Adjust the time (in milliseconds) as needed, e.g., 5000 for 5 seconds
+
+
 const toggleButton = document.getElementById('nav-toggle');
 const navlinks = document.getElementById('nav-links');
 
@@ -72,9 +80,3 @@ document.addEventListener('click', (event) => {
 
 
 
-setTimeout(function() {
-  var successMsg = document.querySelector('.alert-success');
-  if (successMsg) {
-      successMsg.remove();
-  }
-}, 5000); // Adjust the time (in milliseconds) as needed, e.g., 5000 for 5 seconds
